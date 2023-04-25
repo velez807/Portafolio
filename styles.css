@@ -314,6 +314,7 @@ footer a img{
     .Proyecto{
         flex-wrap: wrap;
         margin: 0.5rem;
+        
     }
     .Proyecto img{
         width: auto;
