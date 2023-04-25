@@ -1,0 +1,361 @@
+:root {
+    --gris: #e3e2e2;
+    --gris2: #e8e8e8;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600; /* semibold */
+    line-height: 1.1;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris);
+    padding-top: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-enlace.activo {
+    position: relative;
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav-enlace.activo::before {
+    content: "";
+    position: absolute;
+    bottom: 1.3rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #000000;
+    margin: 0.5rem 0;
+}
+
+.nav-enlace:not(.activo) {
+    opacity: 0.5;
+}
+
+.nav-enlace {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.Perfil {
+    display: flex;
+    background-color: var(--gris);
+    margin: 0.8rem;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img-perfil {
+    margin-left: 0.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.presentacion {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 100%;
+    /* ajusta la proporción del ancho */
+    word-break: break-word;
+    /* para que el texto no se desborde */
+}
+
+
+.Resumen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 100%;
+    /* ajusta la proporción del ancho */
+    word-break: break-word;
+    /* para que el texto no se desborde */
+}
+
+.Aptitudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Aptitud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 250px;
+    /* Ancho máximo de la tarjeta */
+    margin: 10px;
+    /* Margen entre las tarjetas */
+}
+
+.Aptitud img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Aptitud h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.Aptitud p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+
+.SobreMi{
+    background-color: var(--gris);
+    margin-top: 1rem;
+    margin-left:  6rem;
+    margin-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 40px;
+    flex-basis: 100%;
+    word-break: break-word;
+}
+.SobreMi p{
+    font-size: 1.2rem;
+    margin: 0;
+
+}
+
+.tecnologias{
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left:  6rem;
+    margin-right: 6rem;
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+    flex-basis: 100%;
+}
+.tecs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tecs img{
+    width:  5rem;
+    height: 5rem;
+    object-fit: contain;
+    margin: 5px;
+}
+
+
+footer{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+footer a{
+    margin: 0 0.25rem;
+    text-decoration: none;
+}
+footer a img{
+    width:  2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+/* Proyectos */
+.Proyectos h2{
+    margin-bottom: 0;
+}
+
+.Proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: var(--gris);
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+}
+.Proyecto img{
+    width:  auto;
+    max-width: 400px;
+    height: 15rem;
+    object-fit: fill;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.Proyecto p{
+    background-color: var(--gris2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+    font-size: 1.2rem;
+    word-break: break-word;
+}
+
+
+/* Contacto */
+.Contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Contacto a{
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.tarjeta a{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: var(--gris);
+    flex-basis: 100%;
+    margin-top: 4rem;
+    width: 500px;
+}
+.tarjeta h2{
+    text-align: center;
+}
+.tarjeta img{
+    width:  auto;
+    max-width: 400px;
+    height: 4rem;
+    margin: 0.5rem;
+}
+.celular{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: var(--gris);
+    flex-basis: 100%;
+    margin-top: 4rem;
+    width: 500px;
+}
+.celular h2{
+    text-align: center;
+}
+.celular img{
+    width:  auto;
+    max-width: 400px;
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .img-perfil{
+        margin: auto;
+        width:  12rem;
+        height: 12rem;
+        margin-left: 0.5rem;
+    }
+    .SobreMi {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .tecnologias {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    /* Proyectos */
+    .Proyecto{
+        flex-wrap: wrap;
+        margin: 0.5rem;
+    }
+    .Proyecto img{
+        width: auto;
+        height: 90%;
+        margin: 10px;
+    }
+    .Proyecto p{
+        height: auto;
+        margin: 1rem;
+    }
+
+    /* Contacto */
+    .tarjeta a{
+        width: auto;
+    }
+    .celular{
+        width: auto;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .Perfil{
+        flex-direction: column;
+    }
+    .img-perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    /* Proyectos */
+    .Proyecto{
+        flex-wrap: wrap;
+        margin: 0.5rem;
+    }
+    .Proyecto img{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    .Proyecto p{
+        height: auto;
+        margin: 1rem;
+    }
+  }
