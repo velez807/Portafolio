@@ -290,6 +290,7 @@ footer a img{
     max-width: 400px;
     height: 4rem;
     margin: 0.5rem;
+
 }
 
 
@@ -314,12 +315,13 @@ footer a img{
     .Proyecto{
         flex-wrap: wrap;
         margin: 0.5rem;
-        
+
     }
     .Proyecto img{
-        width: auto;
-        height: 90%;
+        width: 100%;
+        height: auto;
         margin: 10px;
+    
     }
     .Proyecto p{
         height: auto;
@@ -329,9 +331,13 @@ footer a img{
     /* Contacto */
     .tarjeta a{
         width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .celular{
         width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
 
@@ -349,11 +355,6 @@ footer a img{
     .Proyecto{
         flex-wrap: wrap;
         margin: 0.5rem;
-    }
-    .Proyecto img{
-        width: 100%;
-        height: auto;
-        margin: 10px;
     }
     .Proyecto p{
         height: auto;
